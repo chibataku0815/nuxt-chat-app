@@ -1,4 +1,4 @@
-import pkg from './package'
+import pkg from './package.json'
 
 export default {
   mode: 'universal',
@@ -40,7 +40,7 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
   ],
 
   /*
