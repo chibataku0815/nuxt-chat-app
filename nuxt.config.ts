@@ -39,8 +39,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org/docs/
-    // 'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources',,
   ],
 
   /*
@@ -51,6 +50,13 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
-  }
+    },
+  },
+  styleResources: {
+    scss: [
+      '~node_modules/bootstrap-scss/_functions.scss',
+      '~node_modules/bootstrap-scss/_variables.scss',
+      '~node_modules/bootstrap-scss/_mixins.scss',
+    ]
+  },
 }
